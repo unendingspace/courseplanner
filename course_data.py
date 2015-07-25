@@ -109,6 +109,12 @@ class Term:
 		self.courses = CourseList([])
 		self.num_courses = 0
 	
+	def getSeason(self):
+		return self.season
+	
+	def getYear(self):
+		return self.year
+	
 	def addCourse(self, course):
 		if self.num_courses == 5:
 			print "Adding another course will put the term over 5 courses. \n"
